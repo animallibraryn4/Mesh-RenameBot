@@ -41,7 +41,7 @@ class Config:
     # Access Restriction
     IS_PRIVATE = [bool, get_config_value("IS_PRIVATE", [bool, False])]
     AUTH_USERS = [list, get_config_value("AUTH_USERS", [list, [5380609667]])]
-    OWNER_ID = [int, get_config_value("OWNER_ID", [int, 0])]
+    OWNER_ID = [int, get_config_value("OWNER_ID", [int, 5380609667])]
 
     # Public username url or invite link of private chat
     FORCEJOIN = [str, get_config_value("FORCEJOIN", [str, ""])]

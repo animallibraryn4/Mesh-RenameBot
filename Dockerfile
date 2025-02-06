@@ -7,3 +7,4 @@ COPY . .
 RUN pip install -U -r requirements.txt
 
 CMD [ "python", "-m", "MeshRenameBot" ]
+CMD ["python", "your_script.py"]

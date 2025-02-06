@@ -27,10 +27,10 @@ def get_config_value(key, default):
 
 
 class Config:
-    DATABASE_URL = [str, get_config_value("DATABASE_URL", [str, ""])]
+    DATABASE_URL = [str, get_config_value("DATABASE_URL", [str, "mongodb+srv://Nt1:<db_password>@nt1.thwrt.mongodb.net/?retryWrites=true&w=majority&appName=NT1"])]
     API_HASH = [str, get_config_value("API_HASH", [str, "abcdedf......"])]
-    API_ID = [int, get_config_value("API_ID", [int, 1234567])]
-    BOT_TOKEN = [str, get_config_value("BOT_TOKEN", [str, "bot:token here"])]
+    API_ID = [int, get_config_value("API_ID", [int, "09b09f3e2ff1306da4a19888f614d937"])]
+    BOT_TOKEN = [str, get_config_value("BOT_TOKEN", [str, "7906213903:AAHCrLWgHppbCIdRm7kjnmovnBLIfCtPRVM"])]
     COMPLETED_STR = [str, get_config_value("COMPLETED_STR", [str, "▰"])]
     REMAINING_STR = [str, get_config_value("REMAINING_STR", [str, "▱"])]
     MAX_QUEUE_SIZE = [int, get_config_value("MAX_QUEUE_SIZE", [int, 5])]
@@ -40,14 +40,14 @@ class Config:
 
     # Access Restriction
     IS_PRIVATE = [bool, get_config_value("IS_PRIVATE", [bool, False])]
-    AUTH_USERS = [list, get_config_value("AUTH_USERS", [list, [123456789]])]
+    AUTH_USERS = [list, get_config_value("AUTH_USERS", [list, [5380609667]])]
     OWNER_ID = [int, get_config_value("OWNER_ID", [int, 0])]
 
     # Public username url or invite link of private chat
     FORCEJOIN = [str, get_config_value("FORCEJOIN", [str, ""])]
-    FORCEJOIN_ID = [int, get_config_value("FORCEJOIN_ID", [int, -100123465978])]
+    FORCEJOIN_ID = [int, get_config_value("FORCEJOIN_ID", [int, -1002301125729])]
 
-    TRACE_CHANNEL = [int, get_config_value("TRACE_CHANNEL", [int, 0])]
+    TRACE_CHANNEL = [int, get_config_value("TRACE_CHANNEL", [int, -1001896877147])]
     SAVE_FILE_TO_TRACE_CHANNEL = [
         bool,
         get_config_value("SAVE_FILE_TO_TRACE_CHANNEL", [bool, False]),
